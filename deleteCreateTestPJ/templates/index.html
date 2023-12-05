@@ -1,0 +1,18 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport", content="width=device-width">
+            <title>list-detail View Home</title>
+            <link href="{% static 'style.css' %}" rel="stylesheet">
+        </head>
+
+        <body>
+            <h1 class="top-title">Django TodoApp</h1>
+            <button type="button" class="btn-todo"><a href="{% url 'todoApp:todoListPage' %}" class="btn-todo-a">Check todoList</a></button>
+        </body>
+
+    </html>

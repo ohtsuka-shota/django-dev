@@ -1,0 +1,9 @@
+.btn-dlt {
+    background-color: red;
+    color: white;
+    width: 10%;
+}
+
+.btn-dlt:hover {
+    background-color: rgba(102, 4, 4, 0.87);
+}

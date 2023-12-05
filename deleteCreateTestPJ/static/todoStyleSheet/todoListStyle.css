@@ -1,0 +1,45 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.title {
+    background-color: grey;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;
+}
+
+.todo-link {
+    color: white;
+    margin-left: 1%;
+    text-decoration: none;
+}
+
+.todo-li {
+    background-color: rgb(0, 255, 170);
+    list-style: none;
+    padding:1%;
+    width: 95%;
+}
+
+.btn {
+    background-color: rgb(14, 95, 67);
+    width: 30%;
+}
+
+.btnDelete {
+    background-color: rgb(248, 4, 4);
+    width: 30%;
+}
+
+.btn:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+.btn-div {
+    text-align: right;
+    margin-right: 2%;
+}

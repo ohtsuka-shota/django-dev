@@ -1,0 +1,19 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport", content="width=device-width">
+            <title>todoDelete</title>
+            <link href="{% static 'todoStyleSheet/todoDeleteStyle.css' %}" rel="stylesheet">
+        </head>
+
+        <body>
+            <form action="", method="POST">{% csrf_token %}
+                <input type="submit" value="todoの削除を実行" class="btn-dlt">
+            </form>
+        </body>
+
+    </html>

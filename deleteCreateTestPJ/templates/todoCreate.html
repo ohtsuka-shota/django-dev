@@ -1,0 +1,49 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>新規todo作成</title>
+        <link href="{% static 'todoStyleSheet/todoCreateStyle.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <form method="post" action="{% url 'todoApp:todoCreatePage' %}" class="">
+                {% csrf_token %}
+                <div id="">
+                    <img src="{% static 'images/file_type_light_todo_icon_130428.png' %}">
+                </div>
+                <h1 id="">新規todo作成</h1>
+                <div class="sign-up-form">
+                    <input class="sign-up-content" type="text" placeholder="Title"
+                           name="{{ form.title.html_name }}" autofocus="" autocapitalize="none" maxlength="100" required="">
+                </div>                
+                <div class="sign-up-form">
+                    <textarea class="sign-up-content" placeholder="Memo"
+                              name="{{ form.memo.html_name }}" autofocus="" autocapitalize="none" maxlength="250" required="">
+                    </textarea>
+                </div>
+                <div class="sign-up-form">
+                    <select class="sign-up-content" name="{{ form.priority.html_name }}" required="">
+                        {% for value, label in form.fields.priority.choices %}
+                            <option value="{{ value }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="sign-up-form">
+                    <input class="sign-up-content" type="date" placeholder="Deadline"
+                           name="{{ form.deadline.html_name }}" autofocus="" autocapitalize="none" maxlength="250" required="">
+                </div>
+                
+                <div id="submit-form">
+                    <button id="sign-up-button" type="submit">新規todoを作成</button>
+                </div>
+            </form>
+        </div>
+    </body>
+    
+    </html>
