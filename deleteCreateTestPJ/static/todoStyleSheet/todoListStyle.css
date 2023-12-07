@@ -4,12 +4,11 @@ body{
 }
 
 .title {
-    background-color: grey;
-    text-align: center;
-    margin: 0;
+    margin: auto;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-family: serif;
+    color: white;
 }
 
 .todo-link {
@@ -19,14 +18,14 @@ body{
 }
 
 .todo-li {
-    background-color: rgb(0, 255, 170);
+    border: 1px solid blue;
     list-style: none;
     padding:1%;
     width: 95%;
 }
 
 .btn {
-    background-color: rgb(14, 95, 67);
+    background-color: rgb(6, 135, 255);
     width: 30%;
 }
 
@@ -42,4 +41,18 @@ body{
 .btn-div {
     text-align: right;
     margin-right: 2%;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: row; /* デフォルトなので必要ないかもしれませんが、明示的に指定 */
+    justify-content: space-between; /* 適切な配置を調整 */
+    align-items: center; /* 垂直方向の配置を調整 */
+    background-color: blue;
+}
+
+.btnCreate {
+    background-color: rgb(6, 135, 255);
+    width: 130%;
+    padding: 10%;
 }

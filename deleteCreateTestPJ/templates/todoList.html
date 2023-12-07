@@ -11,7 +11,10 @@
         </head>
 
         <body>
-            <h1 class="title">ToDoList</h1>
+            <div class="header-container">
+                <h1 class="title">ToDoList</h1>
+                <button type="button" class="btnCreate"><a href="{% url 'todoApp:todoCreatePage' %}" class="todo-link">todo作成</a></button>
+            </div>
             {% for todo in object_list %}
                 <ul>
                 <li class="todo-li">{{ todo.title }}<br>
