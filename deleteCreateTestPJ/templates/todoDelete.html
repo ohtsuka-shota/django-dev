@@ -11,12 +11,12 @@
         </head>
 
         <body>
-            <div>本当にタスク：【{{ object.title }}】を削除しますか？</div>
-            <div>
-                <form action="", method="POST">{% csrf_token %}
-                    <input type="submit" value="todoの削除を実行" class="btn-dlt">
+            <div class="message">本当にタスク：【{{ object.title }}】を削除しますか？</div>
+            <div class="todo-flexbox">
+                <form action="", method="POST" class="formDelete">{% csrf_token %}
+                    <button type="submit" class="btn-submit">todoの削除を実行</button>
                 </form>
-                <div class="btn-div"><button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoListPage' %}'">ToDoListに戻る</button></div>
+                <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoListPage' %}'">ToDoListに戻る</button>
             </div>
         </body>
 

@@ -5,8 +5,8 @@ body{
 
 .header-container {
     display: flex;
-    justify-content: space-between; /* 適切な配置を調整 */
-    align-items: center; /* 垂直方向の配置を調整 */
+    justify-content: space-between;
+    align-items: center; 
     background-color: blue;
 }
 

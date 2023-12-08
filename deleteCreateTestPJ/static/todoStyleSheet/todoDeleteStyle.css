@@ -1,19 +1,31 @@
-.btn-dlt {
-    background-color: red;
+.message {
+    margin-bottom: 1%;
+}
+
+.formDelete{
     width: 30%;
+    background-color: rgb(6, 135, 255);
     color: white;
 }
 
-.btn-dlt:hover {
-    background-color: rgba(102, 4, 4, 0.87);
+.btn-submit {
+    width: 100%;
+    background-color: rgb(6, 135, 255);
+    color: white;   
+}
+
+.todo-flexbox {
+    display: flex;
+    justify-content: space-around;
 }
 
 .btn {
+    width: 30%; 
     background-color: rgb(6, 135, 255);
-    width: 30%;
     color: white;
 }
 
 .btn:hover {
     background-color: rgb(0, 17, 11);
 }
+
