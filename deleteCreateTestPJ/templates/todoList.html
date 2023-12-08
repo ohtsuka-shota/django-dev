@@ -6,13 +6,13 @@
         <head>
             <meta charset="utf-8">
             <meta name="viewport", content="width=device-width">
-            <title>list-detail ListPage</title>
+            <title>task一覧</title>
             <link href="{% static 'todoStyleSheet/todoListStyle.css' %}" rel="stylesheet">
         </head>
 
         <body>
             <div class="header-container">
-                <h1 class="title">ToDoList</h1>
+                <h1 class="title">task一覧</h1>
             </div>
             <div class="btn-div"><button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoCreatePage' %}'">todo作成</button></div>
             {% for todo in object_list %}

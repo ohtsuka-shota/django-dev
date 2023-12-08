@@ -4,11 +4,13 @@ body{
 }
 
 .title {
-    background-color: grey;
+    background-color: blue;
     margin: 0;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     padding-left: 0.5%;
+    color: white;
+    text-align: center;
 }
 
 .sub-title {
@@ -24,17 +26,17 @@ body{
     margin-right: 2%;
 }
 
-.btn-back {
-    background-color: rgb(14, 95, 67);
-    color: white;
+.btn {
+    background-color: rgb(6, 135, 255);
     width: 30%;
+    color: white;
 }
 
-.btn-back:hover {
+.btn:hover {
     background-color: rgb(0, 17, 11);
 }
 
-.btn-text {
-    color: white;
-    text-decoration: none;
+#submit-form{
+    text-align: center;
+    padding-top: 5%;
 }

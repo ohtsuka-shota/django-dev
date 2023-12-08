@@ -23,6 +23,11 @@ body{
     color: white;
 }
 
+.sub-title {
+    font-size: 24px;
+    color: blue;
+}
+
 .task-create-form {
     padding-top: 3%;
     width: 30%;
