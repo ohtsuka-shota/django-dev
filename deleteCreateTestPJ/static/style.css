@@ -4,16 +4,17 @@ body {
 }
 
 .top-title {
-    background-color: grey;
+    background-color: blue;
     text-align: center;
     margin: 0;
     padding-top: 0.5%;
     padding-bottom: 0.5%;
     font-family: serif;  
+    color: white;
 }
 
 .btn-todo {
-    background-color: rgb(14, 95, 67);
+    background-color: blue;
     color: white;
     padding: 1%;
     margin-top: 1%;

@@ -1,5 +1,11 @@
 .message {
     margin-bottom: 1%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.task-name {
+    color:blue;
 }
 
 .formDelete{
