@@ -11,9 +11,13 @@
         </head>
 
         <body>
-            <form action="", method="POST">{% csrf_token %}
-                <input type="submit" value="todoの削除を実行" class="btn-dlt">
-            </form>
+            <div>本当にタスク：【{{ object.title }}】を削除しますか？</div>
+            <div>
+                <form action="", method="POST">{% csrf_token %}
+                    <input type="submit" value="todoの削除を実行" class="btn-dlt">
+                </form>
+                <div class="btn-div"><button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoListPage' %}'">ToDoListに戻る</button></div>
+            </div>
         </body>
 
     </html>
