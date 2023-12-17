@@ -1,0 +1,37 @@
+.message {
+    margin-bottom: 1%;
+    font-size: 24px;
+    text-align: center;
+}
+
+.task-name {
+    color:blue;
+}
+
+.formDelete{
+    width: 30%;
+    background-color: rgb(6, 135, 255);
+    color: white;
+}
+
+.btn-submit {
+    width: 100%;
+    background-color: rgb(6, 135, 255);
+    color: white;   
+}
+
+.todo-flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    width: 30%; 
+    background-color: rgb(6, 135, 255);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(0, 17, 11);
+}
+

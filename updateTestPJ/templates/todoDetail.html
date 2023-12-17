@@ -1,0 +1,24 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport", content="width=device-width">
+            <title>{{ object.title }}</title>
+            <link href="{% static 'todoStyleSheet/todoDetailStyle.css' %}" rel="stylesheet">
+        </head>
+
+        <body>
+            <h1 class="title">{{ object.title }}</h1>
+            <h3 class="sub-title">タスク詳細<h5 class="content">{{ object.memo }}</h5></h3>
+            <h3 class="sub-title">タスク優先度<h5 class="content">{{ object.priority }}</h5></h3>
+            <h3 class="sub-title">タスク完了期日<h5 class="content">{{ object.deadline }}</h5></h3>
+            <div id="submit-form">
+                <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoListPage' %}'">一覧に戻る</button>
+            </div>
+        </body>
+    
+    </html>
+

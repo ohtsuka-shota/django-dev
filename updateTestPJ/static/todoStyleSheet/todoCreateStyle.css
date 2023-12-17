@@ -1,0 +1,70 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+#create-icon {
+    text-align: center;
+    margin-top: 1%;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: blue;
+}
+
+.title {
+    margin: auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;
+    color: white;
+}
+
+.sub-title {
+    font-size: 24px;
+    color: blue;
+}
+
+.task-create-form {
+    padding-top: 3%;
+    width: 30%;
+    margin: auto;
+}
+
+.task-create-content {
+    border-radius: 4px;
+    font-family: serif;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#submit-form{
+    text-align: center;
+    padding-top: 5%;
+}
+
+#task-create-button {
+    color: white;
+    background-color: rgb(6, 135, 255);
+    width: 30%;
+    border-radius: 4px;
+    font-family: serif;
+    margin-bottom: 2%;
+}
+
+#task-create-button:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+.btn {
+    width: 30%; 
+    background-color: rgb(6, 135, 255);
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(0, 17, 11);
+}

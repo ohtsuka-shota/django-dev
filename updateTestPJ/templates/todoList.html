@@ -1,0 +1,31 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+    
+        <head>
+            <meta charset="utf-8">
+            <meta name="viewport", content="width=device-width">
+            <title>task一覧</title>
+            <link href="{% static 'todoStyleSheet/todoListStyle.css' %}" rel="stylesheet">
+        </head>
+
+        <body>
+            <div class="header-container">
+                <h1 class="title">task一覧</h1>
+            </div>
+            <div class="btn-div"><button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoCreatePage' %}'">todo作成</button></div>
+            {% for todo in object_list %}
+                <ul>
+                <li class="todo-li"><div class="todo-title">{{ todo.title }}</div><br>
+                    <div class="todo-flexbox">
+                    <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoDetailPage' todo.pk %}'">todo確認</button>
+                    <button type="button" class="btnDelete" onclick="window.location.href='{% url 'todoApp:todoDeletePage' todo.pk %}'">todo削除</button>
+                    </div>
+                </li>
+                </ul>
+            {% endfor %}
+            <div class="btn-div"><button type="button" class="btn" onclick="window.location.href='{% url 'homePage' %}'">ホーム画面に戻る</button></div>
+        </body>
+
+    </html>

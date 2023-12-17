@@ -1,0 +1,32 @@
+body {
+    height: 100%;
+    margin: 0;
+}
+
+.top-title {
+    background-color: blue;
+    text-align: center;
+    margin: 0;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;  
+    color: white;
+}
+
+.btn-todo {
+    background-color: blue;
+    color: white;
+    padding: 1%;
+    margin-top: 1%;
+    border-radius: 6px;
+    transition: .3s;
+}
+
+.btn-todo:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+.btn-todo-a {
+    color: white;
+    text-decoration: none;
+}
