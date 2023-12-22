@@ -20,6 +20,7 @@
                 <li class="todo-li"><div class="todo-title">{{ todo.title }}</div><br>
                     <div class="todo-flexbox">
                     <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoDetailPage' todo.pk %}'">todo確認</button>
+                    <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoUpdatePage' todo.pk %}'">todo更新</button>
                     <button type="button" class="btnDelete" onclick="window.location.href='{% url 'todoApp:todoDeletePage' todo.pk %}'">todo削除</button>
                     </div>
                 </li>
