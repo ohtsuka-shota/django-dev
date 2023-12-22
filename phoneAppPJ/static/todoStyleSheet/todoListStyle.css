@@ -1,0 +1,61 @@
+body{
+    height: 100%;
+    margin: 0;
+}
+
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    background-color: blue;
+}
+
+.title {
+    margin: auto;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    font-family: serif;
+    color: white;
+}
+
+.todo-li {
+    border: 1px solid blue;
+    list-style: none;
+    padding:1%;
+    width: 95%;
+}
+
+.todo-flexbox {
+    display: flex;
+    justify-content: space-around;
+}
+
+.btn {
+    background-color: rgb(6, 135, 255);
+    width: 30%;
+    color: white;
+}
+
+.btn:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+.btn-div {
+    text-align: right;
+    margin-right: 2%;
+    margin-top: 1%;
+}
+
+.btnDelete {
+    background-color: rgb(248, 4, 4);
+    width: 30%;
+    color: white;
+}
+
+.btnDelete:hover {
+    background-color: rgb(0, 17, 11);
+}
+
+
+
+

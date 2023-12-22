@@ -1,0 +1,53 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>新規todo作成</title>
+        <link href="{% static 'todoStyleSheet/todoCreateStyle.css' %}" rel="stylesheet">
+    </head>
+
+    <body>
+        <div>
+            <div class="header-container">
+                <h1 class="title">task作成</h1>
+            </div>
+            <form method="post" action="{% url 'todoApp:todoCreatePage' %}" class="form-group">{% csrf_token %}
+                <div class="task-create-form">
+                    <h3>タスク名</h3>
+                    <input class="task-create-content" type="text" placeholder="Title"
+                    name="{{ form.title.html_name }}" autofocus="" autocapitalize="none" maxlength="100" required="">
+                </div>                
+                <div class="task-create-form">
+                    <h3>タスク詳細</h3>
+                    <textarea class="task-create-content"
+                    name="{{ form.memo.html_name }}" autofocus="" autocapitalize="none" maxlength="250" required="">
+                    </textarea>
+                </div>
+                <div class="task-create-form">
+                    <h3>タスク優先度</h3>
+                    <select class="task-create-content" name="{{ form.priority.html_name }}" required="">
+                        {% for value, label in form.fields.priority.choices %}
+                            <option value="{{ value }}">{{ label }}</option>
+                        {% endfor %}
+                    </select>
+                </div>
+                <div class="task-create-form">
+                    <h3>タスク完了期日</h3>
+                    <input class="task-create-content" type="date" placeholder="Deadline"
+                           name="{{ form.deadline.html_name }}" autofocus="" autocapitalize="none" maxlength="250" required="">
+                </div>
+                
+                <div id="submit-form">
+                    <button id="task-create-button" type="submit">task作成</button>
+                    <button type="button" class="btn" onclick="window.location.href='{% url 'todoApp:todoListPage' %}'">リストに戻る</button>
+                </div>
+                    
+            </form>
+        </div>
+    </body>
+    
+    </html>
