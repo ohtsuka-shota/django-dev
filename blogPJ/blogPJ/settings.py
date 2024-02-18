@@ -113,3 +113,10 @@ DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
 # Blogに掲載する画像等の格納場所を設定
 MEDIA_URL = "/media/"
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+
+MARKDOWNX_MARKDOWN_EXTENSIONS = [
+    'markdown.extensions.extra',   
+    'markdown.extensions.codehilite',
+    'markdown.extensions.toc',    
+    'markdown.extensions.nl2br',  
+]
