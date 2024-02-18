@@ -1,0 +1,23 @@
+{% load static %}
+
+<!DOCTYPE html>
+    <html lang="ja">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>暗号化</title>
+        <link href="{% static 'style.css'%}" rel="stylesheet">
+    </head>
+
+    <body>
+        <form id="encryptionForm" method="post" action="{% url 'callPyApp:encryptView' %}">
+            {% csrf_token %}
+            <label for="data_input">Enter Data:</label>
+            <input type="text" id="data_input" name="data_input" required>
+            <button type="submit">Encrypt</button>
+        </form>
+
+        <div id="encrypted_result"></div>
+
+    </body>

@@ -9,23 +9,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # See https://docs.djangoproject.com/en/4.1/howto/deployment/checklist/
 
 # SECURITY WARNING: keep the secret key used in production secret!
-SECRET_KEY = "django-insecure--&lmf$b(82p8rk#4@h6xrv4pv38ragm(dhx8!lp+7fc8_ouyfz"
+SECRET_KEY = "django-insecure-m=2f_hojn$p=gx7%^d7b-f+q9zl8u_c%(9f$2l#49!ix4vjs8s"
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
 ALLOWED_HOSTS = ["*"]
 
+
 # Application definition
 
 INSTALLED_APPS = [
-    "callPyApp",
     "django.contrib.admin",
     "django.contrib.auth",
     "django.contrib.contenttypes",
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
+    "markdownx",
+    "blogApp",
 ]
 
 MIDDLEWARE = [
@@ -38,12 +40,12 @@ MIDDLEWARE = [
     "django.middleware.clickjacking.XFrameOptionsMiddleware",
 ]
 
-ROOT_URLCONF = "callPyPJ.urls"
+ROOT_URLCONF = "blogPJ.urls"
 
 TEMPLATES = [
     {
         "BACKEND": "django.template.backends.django.DjangoTemplates",
-        "DIRS": [BASE_DIR, "templates"],
+        "DIRS": [],
         "APP_DIRS": True,
         "OPTIONS": {
             "context_processors": [
@@ -56,7 +58,7 @@ TEMPLATES = [
     },
 ]
 
-WSGI_APPLICATION = "callPyPJ.wsgi.application"
+WSGI_APPLICATION = "blogPJ.wsgi.application"
 
 
 # Database
@@ -93,11 +95,8 @@ AUTH_PASSWORD_VALIDATORS = [
 # https://docs.djangoproject.com/en/4.1/topics/i18n/
 
 LANGUAGE_CODE = "ja"
-
 TIME_ZONE = "Asia/Tokyo"
-
 USE_I18N = True
-
 USE_TZ = True
 
 
@@ -110,3 +109,7 @@ STATIC_URL = "static/"
 # https://docs.djangoproject.com/en/4.1/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = "django.db.models.BigAutoField"
+
+# Blogに掲載する画像等の格納場所を設定
+MEDIA_URL = "/media/"
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
